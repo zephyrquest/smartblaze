@@ -1,7 +1,7 @@
 # SmartBlaze
 
 **SmartBlaze** is an application designed to integrate with AI models such as OpenAI's ChatGPT and Google's Gemini. It was developed as part of the university thesis project, drawing inspiration from Chatbox (https://github.com/Bin-Huang/chatbox).
-The application is built primarily using the C# programming language, with Blazor and ASP.NET Core frameworks forming the core of its architecture.
+The application is mainly built with C# using Blazor and ASP.NET Core as its core frameworks.
 
 ![SmartBlaze](images/smartblaze.png)
 
@@ -31,7 +31,7 @@ To use SmartBlaze, you need an API key to interact with the chatbot models. You 
 1. **Clone the Repository**
    - Open a terminal and execute the following command:
      ```bash
-     git clone https://github.com/busiedpandora/smartblaze.git
+     git clone https://github.com/zephyrquest/smartblaze.git
      ```
    - Navigate to the `publish/SmartBlaze` folder where the script files are located:
      ```bash
