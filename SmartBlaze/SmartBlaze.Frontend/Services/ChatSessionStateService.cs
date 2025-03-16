@@ -703,8 +703,6 @@ public class ChatSessionStateService(IHttpClientFactory httpClientFactory) : Abs
                 return;
             }
             
-            _currentChatSessionMessages.Add(assistantEmptyMessageDto);
-            
             using var assistantStreamMessageRequest = new HttpRequestMessage(HttpMethod.Post, 
                 $"chat-session/{_currentChatSession?.Id}/generate-assistant-stream-message");
             assistantStreamMessageRequest.Content = JsonContent.Create(chatSessionInfoDto);
@@ -721,6 +719,8 @@ public class ChatSessionStateService(IHttpClientFactory httpClientFactory) : Abs
                     assistantStreamMessageResponseContent.ToString() ?? "");
                 return;
             }
+            
+            _currentChatSessionMessages.Add(assistantEmptyMessageDto);
             
             IAsyncEnumerable<string?> messageChunks =
                 JsonSerializer.DeserializeAsyncEnumerable<string>(assistantStreamMessageResponseContent);
