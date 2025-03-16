@@ -5,9 +5,7 @@ The application is mainly built with C# using Blazor and ASP.NET Core as its cor
 
 ![SmartBlaze](images/smartblaze.png)
 
-
 ![SmartBlaze](images/smartblaze2.png)
-
 
 ## Features and Capabilities
 
@@ -20,7 +18,6 @@ The application is mainly built with C# using Blazor and ASP.NET Core as its cor
 - **Image analysis** by the chatbot with the ability to add images for processing (image vision).
 - **File upload** support, allowing the chatbot to access and analyze the contents of various types of files.
 - **Cloud-based chat and configuration storage**, enabling you to resume conversations across multiple devices.
-
 
 ## How to Use the Application
 
@@ -81,7 +78,13 @@ To use SmartBlaze, you need an API key to interact with the chatbot models. You 
    - Click on the "Register" button and fill in the required details, including a username and password.
    - If you already have an account, click on "Log In" and enter your credentials.
 
+### Configuration
+
+4. **Set the API key**
+   - In the application, go to Settings and set the API key you have obtained for each chatbot you want to use.
+
 ### Important Notes
 
 - **API Key**: Ensure you have obtained an API key from OpenAI or Google before using the chatbot functionality.
 - **Browser Compatibility**: For the best experience, use a modern web browser like Chrome, Firefox, or Edge.
+- **Certificate Issue**: If you encounter the issue where you are unable to configure HTTPS endpoint because no server certificate was specified when launching the application, you may check [this link](https://stackoverflow.com/questions/53300480/unable-to-configure-https-endpoint-no-server-certificate-was-specified-and-the) for the solution.
